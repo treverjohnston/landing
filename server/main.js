@@ -9,7 +9,7 @@ DbContext.connect()
 
 //Sets the port to Heroku's, and the files to the built project 
 var port = process.env.PORT || 3000
-server.use(express.static(__dirname + '/../src/dist'))
+server.use(express.static(__dirname + '/../docs'))
 
 
 var whitelist = ['http://localhost:8080', 'https://landing.ebenezerwebsites.com', 'https://landingsquared.herokuapp.com'];
