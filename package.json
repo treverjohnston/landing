@@ -1,0 +1,45 @@
+{
+  "name": "landingpage",
+  "version": "0.0.1",
+  "description": "Landing Page Sample",
+  "productName": "Landing Page",
+  "cordovaId": "org.cordova.quasar.app",
+  "capacitorId": "",
+  "author": "Trever Johnston (me@treverjohnston.com)",
+  "private": true,
+  "scripts": {
+    "debug": "node index.js",
+    "start": "node index.js",
+    "dev": "node index.js",
+    "serve": "npm run --prefix ./src serve"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.0.0",
+    "animejs": "^3.1.0",
+    "axios": "^0.18.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.16.0",
+    "connect-mongo": "^3.2.0",
+    "connect-mongodb-session": "^2.2.0",
+    "cors": "^2.8.1",
+    "dotenv": "^8.1.0",
+    "esm": "^3.2.25",
+    "express": "^4.14.1",
+    "express-session": "^1.15.0",
+    "mongoose": "^5.8.4",
+    "quasar": "^1.0.0",
+    "vue-animejs": "^2.1.1",
+    "vue-i18n": "^8.0.0"
+  },
+  "devDependencies": {
+    "@quasar/app": "^1.0.0"
+  },
+  "engines": {
+    "node": ">= 10.18.1",
+    "npm": ">= 6.13.4",
+    "yarn": ">= 1.21.1"
+  },
+  "browserslist": [
+    "last 1 version, not dead, ie >= 11"
+  ]
+}
