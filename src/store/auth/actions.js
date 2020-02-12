@@ -13,12 +13,12 @@ let auth_api = axios.create({
 export function getAuth({ commit, dispatch }) {
     auth_api('authenticate')
         .then(res => {
-            if (res.data.data == null) {
+            if (res.data == null) {
                 commit('setLoginStatus', false)
             }
-            else if (res.data.data._id !== null) {
+            else if (res.data._id !== null) {
                 commit('setLoginStatus', true)
-                commit('setUserInfo', res.data.data)
+                commit('setUserInfo', res.data)
             } else {
                 commit('setLoginStatus', false)
             }
@@ -30,7 +30,7 @@ export function register({ commit }, obj) {
     auth_api.post('register', obj)
         .then(res => {
             commit('setLoginStatus', true)
-            commit('setUserInfo', res.data.data)
+            commit('setUserInfo', res.data)
             Notify.create({
                 message: "Successfully created account",
                 type: 'positive',

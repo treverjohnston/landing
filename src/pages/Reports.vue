@@ -1,17 +1,38 @@
 <template>
     <q-page>
-        <div class="row justify-center text-black">
-            <div v-for="submission in submissions">
-                {{submission}}
-            </div>
-        </div>
+        <q-list bordered separator class="row">
+            <q-expansion-item v-for="submission in submissions" class="col-xs-12" expand-separator icon="mail"
+                :label="submission.name" :caption="submission.email">
+                <q-card>
+                    <q-card-section>
+                        <div>
+                            Name: {{submission.name}}
+                        </div>
+                        <div>
+                            Email: {{submission.email}}
+                        </div>
+                        <div>
+                            Phone: {{submission.phone}}
+                        </div>
+                    </q-card-section>
+                    <q-card-section>
+                        <div>
+                            Message:
+                        </div>
+                        <div>
+                            {{submission.body}}
+                        </div>
+                    </q-card-section>
+                </q-card>
+            </q-expansion-item>
+        </q-list>
     </q-page>
 </template>
 
 <script>
     import { openURL } from 'quasar'
     export default {
-        name: 'Admin',
+        name: 'Reports',
         data() {
             return {
             }
@@ -25,9 +46,6 @@
             }
         },
         mounted() {
-            if (!this.loggedIn) {
-                this.$router.push('/admin');
-            }
             this.$store.dispatch('submissions/getRawReportData');
 
         },

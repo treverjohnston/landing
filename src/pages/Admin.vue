@@ -3,7 +3,7 @@
         <div class="row justify-center" v-if="loggedIn">
             <Reports></Reports>
         </div>
-        <div class="v-else">
+        <div v-else>
             <Login></Login>
         </div>
     </q-page>

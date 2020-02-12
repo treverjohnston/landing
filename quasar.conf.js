@@ -60,7 +60,12 @@ module.exports = function (ctx) {
         'QForm',
         'QCarousel',
         'QCarouselControl',
-        'QCarouselSlide'
+        'QCarouselSlide',
+        'QList',
+        'QItemSection',
+        'QItemLabel',
+        'QExpansionItem'
+
       ],
       directives: [],
 
