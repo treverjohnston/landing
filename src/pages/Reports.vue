@@ -2,7 +2,7 @@
     <q-page>
         <q-list bordered separator class="row">
             <q-expansion-item v-for="submission in submissions" class="col-xs-12" expand-separator icon="mail"
-                :label="submission.name" :caption="submission.email">
+                :label="submission.email" :caption="submission.createdAt">
                 <q-card>
                     <q-card-section>
                         <div>
