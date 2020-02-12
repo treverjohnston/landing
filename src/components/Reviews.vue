@@ -11,7 +11,7 @@
         <div class="col-xs-11 col-md-11 q-mb-xl">
             <q-carousel v-model="slide" transition-prev="scale" transition-next="scale" swipeable animated autoplay
                 infinite control-color="grey" navigation padding arrows height="100%" class="bg-white rounded-borders">
-                <q-carousel-slide v-for="card in reviews" :name="card.id" class="row justify-around">
+                <q-carousel-slide v-for="card in reviews" :name="card.id" :key="card.id" class="row justify-around">
                     <q-card class="bg-white q-mt-md q-mb-xl col-md-5">
                         <q-card-section>
                             <div class="text-h6 text-weight-light">{{customerIpsum}}</div>

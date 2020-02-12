@@ -42,7 +42,7 @@
   import Reviews from '../components/Reviews.vue'
   import ContactDark from '../components/ContactDark.vue'
   export default {
-    name: 'PageIndex',
+    name: 'Home',
     data() {
       return {}
     },
@@ -57,6 +57,9 @@
       ContactDark
     },
     methods: {
+    },
+    mounted() {
+      this.$ga.require('GMT-WSR63JJ')
     },
     computed: {
       questionsIpsum() {

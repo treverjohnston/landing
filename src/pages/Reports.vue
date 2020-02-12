@@ -4,7 +4,7 @@
             <h3>Submission Data</h3>
         </div>
         <q-expansion-item v-for="submission in submissions" class="col-xs-12" expand-separator icon="mail"
-            :label="submission.email" :caption="submission.createdAt">
+            :label="submission.email" :caption="submission.createdAt" :key="submission._id">
             <q-card>
                 <q-card-section>
                     <div>
