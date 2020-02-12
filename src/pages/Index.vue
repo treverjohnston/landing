@@ -25,7 +25,7 @@
     <Reviews :customerIpsum="customerIpsum"></Reviews>
 
     <!-- Second Contact Section -->
-    <ContactDark :questionIpsum="questionIpsum"></ContactDark>
+    <ContactDark :questionsIpsum="questionsIpsum"></ContactDark>
 
 
     </div>

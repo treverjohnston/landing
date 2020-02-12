@@ -91,6 +91,7 @@
                     email: this.email,
                     body: this.message
                 }
+                this.$ga.event('Button', 'press', 'Submit', 1)
                 this.$store.dispatch('submissions/submit', obj)
             }
         },

@@ -97,11 +97,7 @@
             }
         },
         props: {
-            shortHeader: {
-                type: String,
-            },
-
-            bodyIpsum: {
+            questionsIpsum: {
                 type: String,
             }
         },
@@ -113,6 +109,7 @@
                     email: this.email,
                     body: this.message
                 }
+                this.$ga.event('Button', 'press', 'Submit2', 2)
                 this.$store.dispatch('submissions/submit', obj)
             }
         },

@@ -28,6 +28,7 @@
     "express-session": "^1.15.0",
     "mongoose": "^5.8.4",
     "quasar": "^1.0.0",
+    "vue-analytics": "^5.22.1",
     "vue-animejs": "^2.1.1",
     "vue-i18n": "^8.0.0"
   },
