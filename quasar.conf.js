@@ -3,6 +3,12 @@
 
 module.exports = function (ctx) {
   return {
+    htmlVariables: {
+      title: 'Landing page',
+      description: 'This a mockup landing page',
+      imgUrl: 'statics/code.png',
+      webUrl: 'https://landing.ebenezerwebsites.com/'
+    },
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/cli-documentation/boot-files
