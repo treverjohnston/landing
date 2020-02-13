@@ -7,7 +7,7 @@
             <q-btn @click="logout">Logout</q-btn>
         </div>
         <q-expansion-item v-for="submission in submissions" class="col-xs-12" expand-separator icon="mail"
-            :label="submission.email" :caption="submission.createdAt" :key="submission._id">
+            :label="submission.email" :caption="submission.createdAt" :key="submission._id" v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['200px', '0px'], duration: 1000},  easing: 'linear' }">
             <q-card>
                 <q-card-section>
                     <div>

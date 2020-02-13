@@ -5,7 +5,7 @@
                 <div class="row justify-center q-gutter-sm">
                     <q-space />
                     <div class="col-md-4">
-                        <div class="row mobile-only">
+                        <div class="row mobile-only" v-anime="{opacity: { value: ['0', '1'], duration: 500,delay:300 }, translateY: { value: ['200px', '0px'], duration: 1000},  easing: 'linear' }">
                             <div class="col-xs-12 q-mb-xl">
                                 <q-icon name="code" size="3rem" />
                             </div>
