@@ -60,6 +60,7 @@
     },
     mounted() {
       this.$ga.require('GMT-WSR63JJ')
+      this.$ga.require('13626801')
     },
     computed: {
       questionsIpsum() {

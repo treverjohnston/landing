@@ -18,6 +18,7 @@
     mounted() {
       this.$store.dispatch('auth/getAuth');
       this.$ga.require('GMT-WSR63JJ')
+      this.$ga.require('13626801')
     },
     methods: {
       logout() {
