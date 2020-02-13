@@ -16,7 +16,7 @@ export function getRawReportData({ commit }) {
             commit('setRawReportData', res.data)
         })
         .catch(err => {
-            console.err('Error getting reports', err)
+            console.error('Error getting reports', err)
         })
 }
 export function submit({ commit }, obj) {

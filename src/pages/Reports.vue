@@ -1,7 +1,10 @@
 <template>
     <q-list bordered separator class="row justify-center full-width">
         <div class="col-xs-8  text-center">
-            <h3>Submission Data</h3>
+            <span class="text-h4">Submission Data</span>
+        </div>
+        <div class="col-xs-8 q-mt-md q-mb-md text-center">
+            <q-btn @click="logout">Logout</q-btn>
         </div>
         <q-expansion-item v-for="submission in submissions" class="col-xs-12" expand-separator icon="mail"
             :label="submission.email" :caption="submission.createdAt" :key="submission._id">
@@ -51,7 +54,10 @@
 
         },
         methods: {
-
+            logout() {
+                this.$store.dispatch('auth/logout');
+                this.$router.push('/admin');
+            }
         }
     }
 </script>
